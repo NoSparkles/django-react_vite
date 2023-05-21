@@ -1,16 +1,16 @@
-import Helmet from 'react-helmet'
+import React from 'react'
 import Hello from './components/Hello'
+import image from './images/download.jpg'
+import image2 from './images/download2.jpg'
 
 function App() {
-  
-  return (
-    <>
-     <Helmet>
-      <title>Hi</title>
-     </Helmet>
-     <Hello name="Jake"></Hello>
-    </>
-  )
+    return(
+      <>
+        <Hello name="false"></Hello>
+        <img src={image} alt="" />
+        <img src={image2} alt="" />
+      </>
+    )
 }
 
 export default App
